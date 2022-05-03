@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Regist_scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/background_login_div_bg"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/tv_regist_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="考勤注册"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_regist_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_regist_title"
+                android:layout_marginTop="20dp"
+                android:text="手机号"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_regist_phone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_regist_phone"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="5dp"
+                android:hint="请输入手机号"
+                android:inputType="phone"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/tv_regist_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_regist_phone"
+                android:layout_marginTop="20dp"
+                android:text="用户名"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_regist_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_regist_name"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="5dp"
+                android:hint="请输入用户名"
+                android:inputType="text"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/tv_regist_cata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_regist_name"
+                android:layout_marginTop="20dp"
+                android:text="考勤组别"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_regist_cata"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_regist_cata"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="5dp"
+                android:hint="请输入考勤用户组"
+                android:inputType="text"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/tv_regist_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_regist_cata"
+                android:layout_marginTop="10dp"
+                android:text="密码"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_regist_password"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_regist_password"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="5dp"
+                android:hint="请输入登录密码"
+                android:inputType="textPassword"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/et_regist_password2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_regist_password"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="5dp"
+                android:hint="请再次输入登录密码"
+                android:inputType="textPassword"
+                android:singleLine="true" />
+
+
+            <LinearLayout
+                android:id="@+id/l1_protocal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_regist_password2"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cb_agree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我已阅读并同意"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_privacy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="【用户协议】"
+                    android:textColor="#F1641A"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/img_regist_back"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_below="@+id/l1_protocal"
+                android:layout_marginTop="60dp"
+                android:src="@drawable/backlogin" />
+
+            <TextView
+                android:id="@+id/tv_regist_backlogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/l1_protocal"
+                android:layout_marginTop="60dp"
+                android:layout_toRightOf="@+id/img_regist_back"
+                android:clickable="true"
+                android:text="返回登录" />
+
+            <Button
+                android:id="@+id/btn_regist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/l1_protocal"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/btn_style"
+                android:text="注册" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>
+

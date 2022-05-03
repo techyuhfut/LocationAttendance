@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tab">
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="#F4F4F4">
+
+        <LinearLayout
+            android:id="@+id/setLoc_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/setLoc_image"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="4dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/setloc_un" />
+
+            <TextView
+                android:id="@+id/setLoc_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="设定"
+                android:textColor="#B0B5BC"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/checkin_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/checkin_image"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginTop="4dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/checkin_select" />
+            <TextView
+                android:id="@+id/checkin_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="签到"
+                android:textColor="#2EA58C"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/record_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/record_image"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginTop="4dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/record_un" />
+
+            <TextView
+                android:id="@+id/record_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="数据"
+                android:textColor="#B0B5BC"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
+

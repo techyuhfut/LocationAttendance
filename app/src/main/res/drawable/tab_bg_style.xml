@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--默认状态-->
+
+    <item android:state_pressed="false">
+        <shape>
+            <solid android:color="@color/tab_unpressed" />
+
+            <corners android:radius="10dp" />
+
+            <!--<stroke android:width="1dp" android:color="#afafaf" />-->
+        </shape>
+    </item>
+    <!--点击状态-->
+
+    <item android:state_pressed="true">
+        <shape>
+            <solid android:color="@color/tab_pressed" />
+
+            <corners android:radius="10dp" />
+
+            <!--<stroke android:width="1dp" android:color="#afafaf" />-->
+        </shape>
+    </item>
+    <!--<item android:drawable="@color/tab_pressed" android:state_pressed="true"/>-->
+    <!--<item android:drawable="@color/tab_unpressed" android:state_pressed="false"/>-->
+
+
+</selector>

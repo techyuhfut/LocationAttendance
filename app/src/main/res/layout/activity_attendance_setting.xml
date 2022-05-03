@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:background="@color/back">
+	<RelativeLayout
+		android:id="@+id/title"
+		android:layout_width="fill_parent"
+		android:layout_height="100dp"
+		android:background="@color/color_48baf3">
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="50dp"
+			android:gravity="center_horizontal">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerInParent="true"
+				android:text="考勤设置"
+				android:textColor="#FFFFFF"
+				android:textSize="18sp" />
+		</RelativeLayout>
+	</RelativeLayout>
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="100dp"
+		android:layout_marginTop="-50dp"
+		android:layout_marginLeft="15dp"
+		android:layout_marginRight="15dp"
+		android:orientation="vertical"
+		android:background="@drawable/userinfo_bg">
+
+		<LinearLayout
+			android:id="@+id/attendance_option"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:layout_weight="1">
+			<LinearLayout
+				android:layout_width="100dp"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:layout_weight="1">
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:paddingLeft="5dp"
+					android:text="考勤业务ID："
+					android:textColor="@color/tab_text"
+					android:textSize="15sp"/>
+
+				<EditText
+					android:id="@+id/et_attendanceId"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_weight="1" />
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="100dp"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:layout_weight="1">
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:paddingLeft="5dp"
+					android:text="考勤半径(m)："
+					android:textColor="@color/tab_text"
+					android:textSize="15sp" />
+				<EditText
+					android:id="@+id/et_attendanceradisu"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"/>
+				<EditText
+					android:id="@+id/et_keyword"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:hint=""
+					android:visibility="gone"/>
+			</LinearLayout>
+
+
+
+		</LinearLayout>
+
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:orientation="horizontal" >
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:gravity="center_horizontal">
+				<Button
+					android:id="@+id/bt_addFence"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginRight="2dp"
+					android:text="设定考勤范围"
+					android:textSize="16dp" />
+			</LinearLayout>
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:gravity="center_horizontal">
+				<Button
+					android:id="@+id/bt_removeFence"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginRight="2dp"
+					android:text="取消考勤范围"
+					android:textSize="16dp" />
+			</LinearLayout>
+
+		</LinearLayout>
+	</LinearLayout>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_marginLeft="15dp"
+		android:layout_marginTop="10dp"
+		android:layout_marginRight="15dp"
+		android:layout_marginBottom="10dp"
+		android:background="@drawable/userinfo_bg"
+		android:gravity="center_horizontal"
+		>
+		<include layout="@layout/plugin_geofence_map"/>
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="60dp"
+			android:layout_alignParentBottom="true"
+			android:gravity="center_horizontal">
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="10dp"
+				android:text="请点击地图选择打卡位置"
+				android:textSize="20sp"
+				android:textColor="@color/white"
+				android:textStyle="bold"/>
+		</LinearLayout>
+
+	</RelativeLayout>
+
+
+
+</LinearLayout>

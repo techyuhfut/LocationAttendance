@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/bt_baidu_location"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="百度-定位数据" />
+
+    <Button
+        android:id="@+id/bt_baidu_map"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="百度-定位地图" />
+    <Button
+        android:id="@+id/bt_baidu_geofence"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="百度-地理围栏" />
+
+    <Button
+        android:id="@+id/bt_attendance_setting"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="签到设置" />
+
+    <Button
+        android:id="@+id/bt_check_in"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="签到测试" />
+</LinearLayout>
